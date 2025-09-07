@@ -144,7 +144,6 @@
             ctx.fillStyle = 'black';
             ctx.textAlign = 'center';
             ctx.fillText(userName.value.trim(), canvas.width / 2, 440);
-            ctx.fillText(mobileNumber.value.trim(), canvas.width / 2, 480);
 
             // Save details to GitHub
             await saveToGitHub(userName.value.trim(), mobileNumber.value.trim());
