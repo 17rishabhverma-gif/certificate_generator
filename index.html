@@ -265,10 +265,10 @@ function generateCertificate(){
     ctx.fillRect(0,0,canvas.width,canvas.height);
   }
 
-  ctx.font = 'bold 60px '+(/[\u0900-\u097F]/.test(translatedName)?'"Noto Sans Devanagari",Arial':'Arial');
+  ctx.font = 'bold 40px '+(/[\u0900-\u097F]/.test(translatedName)?'"Noto Sans Devanagari",Arial':'Arial');
   ctx.fillStyle='black';
   ctx.textAlign='center';
-  ctx.fillText(translatedName,canvas.width/2,canvas.height*0.45);
+  ctx.fillText(translatedName,canvas.width/2,canvas.height*0.5);
 }
 
 generateBtn.addEventListener('click', generateCertificate);
